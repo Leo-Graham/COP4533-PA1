@@ -1,3 +1,5 @@
+import time
+
 def gs_matching_engine(hospital_prefs, student_prefs):
     free_hospitals = set(hospital_prefs.keys())
     free_students = set(student_prefs.keys())
@@ -72,7 +74,10 @@ if __name__ == "__main__":
     output_file = "../data/example.out"
     hospital_prefs, student_prefs = read_input(input_file)
     n = len(hospital_prefs)
+    start = time.time()
     matching, proposals = gs_matching_engine(hospital_prefs, student_prefs)
+    end = time.time()
     write_output(output_file, matching, n)
-    print(f"Matching written to {output_file}")
+    print(f"Results can be found in {output_file}")
     print(f"Number of proposals: {proposals}")
+    print(f"Time elapsed: {end - start:.9f} seconds")
