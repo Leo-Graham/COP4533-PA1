@@ -47,7 +47,9 @@ Assumptions:
 
 Task C:
 
+Matching Generator Graph:
+<img width="1496" height="719" alt="image" src="https://github.com/user-attachments/assets/7d009ac6-36f0-4a8a-a853-74bda63f56b8" />
 
-
-TBD
+Verifier Graph:
+<img width="1399" height="736" alt="image" src="https://github.com/user-attachments/assets/8b200689-eece-4225-af82-ee55fe2d892e" />
 
