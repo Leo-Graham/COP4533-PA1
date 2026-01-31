@@ -1,3 +1,5 @@
+import time
+
 def read_input(filename):
     with open(filename, 'r') as f:
         n = int(f.readline())
@@ -112,4 +114,7 @@ def verify_matching(input_file, matching_file):
 if __name__ == "__main__":
     input_file = "../data/example.in"
     matching_file = "../data/example.out"
+    start = time.time()
     verify_matching(input_file, matching_file)
+    end = time.time()
+    print(f"Time elapsed: {end - start:.9f} seconds")
